@@ -55,6 +55,7 @@ TALL_RATIO = 1.5    # h/w above which a landscape re-layout is attempted
 
 # Paths are relative to the repository root, so root-level documents work too.
 DOCS = [
+    ("docs/ARCHITECTURE.md", "How It Works, A Visual Guide"),
     ("docs/PRD.md", "Product Requirements Document"),
     ("docs/TRD.md", "Technical Requirements Document"),
     ("docs/UI-FLOW.md", "UI Flow Specification"),

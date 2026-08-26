@@ -67,6 +67,12 @@ Read this before you plan a build. These numbers are honest, and where something
 | [REPRODUCE.md](REPRODUCE.md) | Step by step build from an empty machine, with a verification checklist |
 | [Build Notes](docs/BUILD-NOTES.md) | Every problem hit during development, how it was diagnosed, and what fixed it |
 
+**Understanding it**
+
+| Document | Contents |
+|---|---|
+| [How It Works: A Visual Guide](docs/ARCHITECTURE.md) | Fourteen diagrams explaining the problem and the mechanism, written for a first read |
+
 **Design**
 
 | Document | Contents |
@@ -78,6 +84,8 @@ Read this before you plan a build. These numbers are honest, and where something
 | [User Manual](docs/USER-MANUAL.md) | Installation, calibration walkthrough, troubleshooting, FAQ |
 
 Every document is also available as Word in [docs/word/](docs/word/), with the diagrams rasterised.
+
+New here? Start with the [Visual Guide](docs/ARCHITECTURE.md), it explains the whole thing in pictures.
 
 To build it, start with [REPRODUCE.md](REPRODUCE.md). To understand how it works, read the [TRD](docs/TRD.md). To use it, read the [User Manual](docs/USER-MANUAL.md).
 
