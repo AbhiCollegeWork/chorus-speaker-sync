@@ -1,0 +1,34 @@
+# Chorus runtime state
+*.log
+logs/
+cache/
+chorus.json.bak-*
+
+# Local config (users keep their own)
+chorus.local.json
+
+# Calibration captures (large, regenerable)
+*.wav
+captures/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Word doc build artefacts
+tools/.build/
+tools/node_modules/
+tools/package*.json
+tools/puppeteer-config.json
