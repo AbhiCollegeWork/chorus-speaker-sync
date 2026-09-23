@@ -32,3 +32,4 @@ tools/.build/
 tools/node_modules/
 tools/package*.json
 tools/puppeteer-config.json
+tools/.build/

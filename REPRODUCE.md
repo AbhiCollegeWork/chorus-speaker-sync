@@ -49,17 +49,35 @@ This distinction matters. Do not file an issue that `chorus calibrate` is missin
 
 ### Software
 
-| Tool | Purpose | Needed for |
-|---|---|---|
-| [Voicemeeter Potato](https://vb-audio.com/Voicemeeter/potato.htm) | The audio engine with five output buses and per bus delay | Part A |
-| PowerShell 5.1 | Ships with Windows | Parts A and B |
-| `AudioDeviceCmdlets` module | Switching the Windows default output device | Part A |
-| [pandoc](https://pandoc.org) 3.x | Markdown to Word conversion | Part C |
-| Node.js 18 or newer | Runs the Mermaid renderer | Part C |
-| Chrome or Edge | Driven headlessly to rasterise diagrams | Part C |
-| Python 3.9 or newer | `python-docx`, `pillow` | Part C |
+| Tool | Purpose | Needed for | Cost |
+|---|---|---|---|
+| [Voicemeeter Potato](https://vb-audio.com/Voicemeeter/potato.htm) | The audio engine with five output buses and per bus delay | Part A | Donationware, see below |
+| PowerShell 5.1 | Ships with Windows | Parts A and B | Free |
+| `AudioDeviceCmdlets` module | Switching the Windows default output device | Part A | Free |
+| [pandoc](https://pandoc.org) 3.x | Markdown to Word conversion | Part C | Free |
+| Node.js 18 or newer | Runs the Mermaid renderer | Part C | Free |
+| Chrome or Edge | Driven headlessly to rasterise diagrams | Part C | Free |
+| Python 3.9 or newer | `python-docx`, `pillow` | Part C | Free |
 
 Get **Potato** specifically, not Voicemeeter Standard or Banana. Potato is the edition with five physical output buses and the per output delay this project depends on.
+
+### A note on what Voicemeeter costs
+
+Voicemeeter is **donationware**, and this guide should be upfront about that before you start.
+
+From VB-Audio's own licence, in `readme.txt` inside the install folder:
+
+> Voicemeeter8 Donationware Model allows you to install and use the application for free until you find it useful. Then you can pay a license price between 10 and 100 EUR/USD when you want, according to your means or usage.
+
+What that means in practice:
+
+- It is **not a subscription**. It is a one time payment, and you choose the amount within that range.
+- Nothing is locked, crippled or time limited. Every feature this project uses works unlicensed, including the per output delay that the whole calibration depends on.
+- Until you license it, Voicemeeter shows a periodic **"About / Registration info"** reminder dialog. It appears on a timer rather than at every launch, and you dismiss it with one click.
+
+So you can build and run everything here without paying. If the project ends up being useful to you, the author is a single developer and the licence is bought at [shop.vb-audio.com](https://shop.vb-audio.com) using a challenge code from Voicemeeter's own About box.
+
+This project is not affiliated with VB-Audio and earns nothing from that link.
 
 ---
 
