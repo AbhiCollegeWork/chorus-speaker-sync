@@ -49,6 +49,16 @@ Windows uses **one Bluetooth radio at a time**, and plugging in USB Bluetooth do
 
 You can go past that limit by mixing transports, for example two Bluetooth speakers plus a tablet on Miracast plus HDMI, because those use different radios and connections.
 
+### 2.3 What it costs
+
+Chorus itself is free. The audio engine it runs on, Voicemeeter, is **donationware**, which is worth knowing before you install anything.
+
+- It is **not a subscription.** You pay once, and you pick the amount, anywhere from 10 to 100 EUR.
+- **You do not have to pay to use it.** Nothing is locked off or time limited. Everything in this manual works unlicensed, including the delay setting that removes the echo.
+- Until you pay, Voicemeeter shows an **"About / Registration info"** reminder now and then. It is not on every launch. Close it and carry on.
+
+If this ends up being something you use often, Voicemeeter is written by one developer and a licence is bought at [shop.vb-audio.com](https://shop.vb-audio.com). This project is not connected to them and gets nothing from that.
+
 ---
 
 ## 3. Installation

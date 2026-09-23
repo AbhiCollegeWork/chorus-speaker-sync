@@ -2,7 +2,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 // Mermaid needs a DOM-ish global before import
+// Mermaid needs a DOM to sanitise labels. Without jsdom every diagram fails
+// with "DOMPurify.sanitize is not a function", which looks like 30 broken
+// diagrams rather than one missing dependency. Fail loudly instead.
 const { JSDOM } = await import('jsdom').catch(() => ({ JSDOM: null }));
+if (!JSDOM) {
+  console.error('ERROR: jsdom is not installed, so Mermaid cannot be parsed.');
+  console.error('       Run:  npm install mermaid@11 jsdom');
+  process.exit(2);
+}
 if (JSDOM) {
   const dom = new JSDOM('<!DOCTYPE html><body></body>', { pretendToBeVisual: true });
   global.window = dom.window;

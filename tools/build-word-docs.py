@@ -202,7 +202,11 @@ def main():
             win, hin = fit_dpi(png)
             ctx = nearest_heading(text, m.start())
             caption = f"Figure {fig_no}. {ctx}" if ctx else f"Figure {fig_no}"
-            replacements.append((m.span(), f"\n![{caption}]({png.as_posix()})\n"))
+            # Reference the image by NAME only; --resource-path resolves it.
+            # An absolute path breaks silently when any parent folder contains a
+            # space: Markdown ends a URL at the first space, so pandoc drops the
+            # image with no warning and the document comes out with no figures.
+            replacements.append((m.span(), f"\n![{caption}]({png.name})\n"))
             print(f"  {png.stem:22s} {win:5.2f} x {hin:5.2f} in   {caption}{note}")
 
         out, last = [], 0
